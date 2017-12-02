@@ -1,0 +1,7 @@
+[core]
+	editor = vim
+[push]
+	default = simple
+[user]
+	email = ldeng33@bloomberg.net
+	name = Lingzhi Deng
