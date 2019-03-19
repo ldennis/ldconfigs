@@ -7,8 +7,8 @@
 
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
-eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
+alias psef='ps -au | grep '
 # alias ll='ls $LS_OPTIONS -l'
 # alias l='ls $LS_OPTIONS -lA'
 #
@@ -21,6 +21,7 @@ export PATH=/opt/bb/bin:$PATH
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+ulimit -c unlimited
 # get current branch in git repo
 function parse_git_branch() {
     BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
