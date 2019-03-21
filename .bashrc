@@ -16,6 +16,7 @@ alias psef='ps -au | grep '
 # alias rm='rm -i'
 # alias cp='cp -i'
 # alias mv='mv -i'
+alias desktop='ssh lingzhi@10.1.28.178'
 set -o vi
 export PATH=/opt/bb/bin:$PATH
 export VISUAL=vim
